@@ -1,0 +1,227 @@
+%-------------------------
+% Latex Resume
+% Author : Nicole Mills
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+
+% \usepackage[sfdefault]{tgadventor}
+ \usepackage[sfdefault]{noto-sans}
+%\usepackage[default]{lato}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \color{RoyalBlue}\vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+     \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \hfill\\ \vspace{1pt}
+    {\Huge \scshape \color{RoyalBlue} Nicole Mills} \\ \vspace{-8pt}
+    \hfill\\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faMapPin\ Chelsea, AL 35043 ~
+    \small \raisebox{-0.1\height}\faPhone\ (561) 460-0639 ~
+    \href{https://www.millsn.com/}{\raisebox{-0.2\height}\faMousePointer\  \underline{millsn.com}} ~ 
+    \href{mailto:nam0068@auburn.edu}{\raisebox{-0.2\height}\faEnvelope\ \underline{nam0068@auburn.edu}} ~ 
+    \href{https://www.github.com/nicoleamills/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/nicoleamills}}
+    \vspace{-5pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Auburn University}{January 2021 -- May 2023}
+      {B.C.S. in Computer Science}{Auburn, AL}
+
+    \resumeSubheading
+      {Florida Atlantic University}{August 2015 -- May 2019}
+      {B.A. in Communication Studies}{Boca Raton, FL}
+    
+    \resumeSubheading
+      {Korea University, Sejong Campus}{August 2017 -- June 2018}
+      {Study Abroad with a focus in Sociology}{Jochiwon, South Korea}
+  \resumeSubHeadingListEnd
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Designed by Nicolita}{July 2016 -- January 2022}
+      {Founder,\href{https://www.etsy.com/shop/designedbynicolita}{\raisebox{-0.2\height}\  \underline{https://www.etsy.com/shop/DesignedByNicolita}}}{Online}
+      \resumeItemListStart
+        \resumeItem{Designed, built, and coded both eCommerce and non-eCommerce websites for small business owners across the world using Liquid for the Shopify platform and HTML/CSS for Wix}
+        \resumeItem{Produced various branding content such as business cards, social media templates, flyers, product packaging, logos, website banners, and website templates}
+        \resumeItem{Prepared wireframes and rough sketches for website layouts and discussed them with clients}
+        \resumeItem{Developed lead generating email marketing campaigns using Klayvio and MailChimp}
+        \resumeItem{Offered expertise to store owners as a Shopify Partner}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Lake Homes Realty}{September 2019 -- April 2020}
+      {Digital Communications Specialist}{Hoover, AL}
+      \resumeItemListStart
+        \resumeItem{Devised a content marketing plan to drive engagement and grew brand awareness across social media platforms by 132\%}
+        \resumeItem{Built out paid ad campaigns for multiple Lake Homes Realty agents to increase lead conversions}
+        \resumeItem{Trained new interns and organized team to optimize WordPress based website’s blog using HTML/CSS and implemented SEO practices to rank first on various search engines}
+        \resumeItem{Created company marketing materials, from page banners to gifs, using Adobe Photoshop}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {BHATE Geosciences}{May 2019 -- August 2019}
+      {Marketing Intern}{Birmingham, AL}
+      \resumeItemListStart
+        \resumeItem{Modernized company branding and produced marketing materials, such as logos, tradeshow banners, flyers, and slideshows using Adobe Suite}
+        \resumeItem{Refreshed WordPress based website utilizing HTML/CSS and JavaScript by adding new pages and blog content to decrease website’s bounce rate by 30\%}
+        \resumeItem{Assisted in creation of weekly and monthly company email newsletters via MailChimp to update clients on current projects and available services}
+        \resumeItem{Established and/or managed social media campaigns for Facebook, Twitter, Instagram, and LinkedIn}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Spherocylinder} $|$ \emph{Java}}{October 2021}
+          \resumeItemListStart
+            \resumeItem{This project consists of four classes which represent a Spherocylinder object, its list objects, and two jUnit tests using Java and jGrasp}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Cloud Storage} $|$ \emph{Java}}{November 2021}
+          \resumeItemListStart
+            \resumeItem{Developed a three-part software project built with Java that involved the monthly cost and reporting for cloud storage. The first part focused on developing classes that represent categories of cloud storage. The second part implemented the Comparator interface, added a class that represented a list of cloud storage objects, and a main method for the program. The final part focused on handling exceptions that were thrown}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          
+    \resumeSubHeadingListEnd
+\vspace{-5pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, HTML/CSS, JavaScript, Liquid, React} \\
+     \textbf{Tools}{: jGrasp, VS Code, Git, Adobe Creative Suite, Klayvio, Shopify, Wix, WordPress, Dubsado, Asana, Wrike, Canva, Final Cut Pro X, Microsoft Office, Moz, SEMrush, Hubspot, Planoly, Later, Google Analytics, Facebook Ads Manager} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+
+
+
+\end{document}
